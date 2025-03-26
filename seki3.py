@@ -61,7 +61,7 @@ st.markdown(
 )
 
 # データベースに接続
-conn = sqlite3.connect('famafinancial.db')
+conn = sqlite3.connect('famafinancial_250325.db')
 c = conn.cursor()
 
 #ロゴをよみこみ
