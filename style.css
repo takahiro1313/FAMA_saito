@@ -1,0 +1,12 @@
+/* ナビゲーションバーのスタイル */ 
+[theme]
+title { 
+  background-color: #3EBEA1;
+  color: white;
+  padding: 10px;
+}  
+
+nav a { 
+  color: #fff;
+  margin-right: 10px;
+}
