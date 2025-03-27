@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\81901\OneDrive\ドキュメント\FAMA_アプリ\venv"
+VIRTUAL_ENV="C:\Users\81901\OneDrive\ドキュメント\FAMA_アプリ_20250327\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
