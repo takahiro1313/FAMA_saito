@@ -17,7 +17,7 @@ client = openai.OpenAI(
 )
 
 # --- APIキーの読み込み ---
-load_dotenv(dotenv_path=".env.txt")  # .env ファイルから環境変数を読み込む
+load_dotenv(".env")  # .env ファイルから環境変数を読み込む
 api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key)
 
