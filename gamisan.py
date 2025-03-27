@@ -8,6 +8,13 @@ from streamlit.column_config import NumberColumn
 import os
 from dotenv import load_dotenv
 from openai import OpenAI
+import httpx
+
+# UTF-8でエンコード
+client = openai.OpenAI(
+    api_key="YOUR_API_KEY",
+    http_client=httpx.Client(headers={"Accept-Charset": "utf-8"})
+)
 
 # --- APIキーの読み込み ---
 load_dotenv(dotenv_path=".env.txt")  # .env ファイルから環境変数を読み込む
