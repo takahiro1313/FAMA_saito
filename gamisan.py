@@ -10,8 +10,8 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 # --- APIキーの読み込み ---
-load_dotenv()  # .env ファイルから環境変数を読み込む
-api_key = os.getenv("OPENAI_API_KEY", st.secrets.get("OPENAI_API_KEY"))
+load_dotenv(dotenv_path=".env.txt")  # .env ファイルから環境変数を読み込む
+api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key)
 
 # --- 松岡修造風コメント ---
