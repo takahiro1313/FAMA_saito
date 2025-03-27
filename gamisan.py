@@ -11,10 +11,10 @@ from openai import OpenAI
 import httpx
 
 # UTF-8でエンコード
-client = openai.OpenAI(
-    api_key="YOUR_API_KEY",
-    http_client=httpx.Client(headers={"Accept-Charset": "utf-8"})
-)
+# client = openai.OpenAI(
+#     api_key="YOUR_API_KEY",
+#     http_client=httpx.Client(headers={"Accept-Charset": "utf-8"})
+# )
 
 # --- APIキーの読み込み ---
 load_dotenv(".env")  # .env ファイルから環境変数を読み込む
